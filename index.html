@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bibliotopia UPNVJT — Link Hub</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrapper">
+    <section class="card-container">
+      <header class="site-header" aria-labelledby="title">
+        <!-- Ganti src dengan logo kamu -->
+        <img class="brand-logo" src="assets/logo-bibliotopia.png" alt="Logo Bibliotopia UPNVJT" />
+        <h1 id="title" class="site-title">Bibliotopia UPNVJT</h1>
+        <p class="site-tagline">"Hidupkan Literasi, Tebarkan Kreasi"</p>
+        <p class="site-desc">
+          <strong>Bibliotopia</strong> adalah <em>library community</em> di bawah UPA Perpustakaan UPN “Veteran” Jawa Timur, digerakkan oleh <strong>Bi-Rangers</strong> (volunteer mahasiswa lintas prodi) untuk menghidupkan literasi dan menjadikan perpustakaan sebagai ruang inspirasi & kreasi.
+        </p>        
+      </header>
+
+      <!-- Trigger: Visi & Misi (terpisah) -->
+      <div class="vm-actions" role="group" aria-label="Tombol Visi dan Misi">
+        <button class="vm-btn btn-green" id="btnVisi" aria-controls="cardVisi" aria-expanded="false">
+          <i class="fa-solid fa-eye"></i> Visi
+        </button>
+        <button class="vm-btn btn-gold" id="btnMisi" aria-controls="cardMisi" aria-expanded="false">
+          <i class="fa-solid fa-bullseye"></i> Misi
+        </button>
+      </div>
+
+      <!-- Flashcard VISI (hidden by default) -->
+      <div class="flashcard is-hidden" id="cardVisi" aria-live="polite">
+        <div class="flashcard-inner">
+          <div class="flashcard-face flashcard-front" role="region" aria-labelledby="visi-heading">
+            <h3 id="visi-heading">Visi Kami</h3>
+            <p>Mewujudkan komunitas literasi mahasiswa yang berintegritas, inovatif, dan inklusif sebagai ruang pengembangan pengetahuan, kreativitas, serta kolaborasi berbasis perpustakaan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flashcard MISI (hidden by default) -->
+      <div class="flashcard is-hidden" id="cardMisi" aria-live="polite">
+        <div class="flashcard-inner">
+          <div class="flashcard-face flashcard-front" role="region" aria-labelledby="misi-heading">
+            <h3 id="misi-heading">Misi Kami</h3>
+            <ul>
+              <li>Menyelenggarakan program yang mendukung penguatan akademik sekaligus pengembangan <em>soft skill</em> mahasiswa.</li>
+              <li>Mengintegrasikan nilai-nilai keilmuan, kreativitas, dan kebersamaan dalam setiap aktivitas komunitas.</li>
+              <li>Menumbuhkan budaya literasi di lingkungan kampus melalui kegiatan yang berkelanjutan dan terarah.</li>
+              <li>Mendorong terciptanya ekosistem perpustakaan sebagai pusat pembelajaran, inovasi, dan kolaborasi.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== Links: Bibliotopia ====== -->
+      <section class="links-group">
+        <h2 class="section-title">
+          <span class="dot dot-green" aria-hidden="true"></span> Bibliotopia UPNVJT
+        </h2>
+
+        <!-- Subgroup: Narahubung -->
+        <h3 class="subsection"><i class="fa-solid fa-user-group"></i> Narahubung</h3>
+        <nav class="links">
+          <a class="link-btn btn-green" href="https://wa.me/6282265588823" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Galih
+            <i class="fa-solid fa-arrow-up-right-from-square ext" aria-hidden="true"></i>
+          </a>
+          <a class="link-btn btn-green" href="https://wa.me/6281515473724" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Cynthia
+            <i class="fa-solid fa-arrow-up-right-from-square ext" aria-hidden="true"></i>
+          </a>
+        </nav>
+
+        <!-- Subgroup: Media Sosial -->
+        <h3 class="subsection"><i class="fa-brands fa-hashtag"></i> Media Sosial</h3>
+        <nav class="links">
+          <a class="link-btn btn-green" href="https://instagram.com/bibliotopia.upnvjt" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i> Instagram Bibliotopia UPNVJT
+            <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
+          </a>
+          <a class="link-btn btn-green" href="https://instagram.com/sbc.upnvjt" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i> Silent Book Club UPNVJT
+            <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
+          </a>
+        </nav>
+
+        <!-- Subgroup: Email -->
+        <h3 class="subsection"><i class="fa-solid fa-envelope-open-text"></i> E-mail</h3>
+        <nav class="links">
+          <a class="link-btn btn-green" href="mailto:bibliotopia.upnvjt@gmail.com">
+            <i class="fa-solid fa-envelope"></i> E-mail Bibliotopia 
+          </a>
+        </nav>
+
+        <!-- Subgroup: Dokumentasi -->
+        <h3 class="subsection"><i class="fa-solid fa-folder-open"></i> Dokumentasi</h3>
+        <nav class="links">
+          <a class="link-btn btn-green" href="https://drive.google.com/drive/folders/1t77IwzNqOtMdq95SwSI1e2o8YFzeGhq9?usp=sharing" target="_blank" rel="noopener">
+            <i class="fa-solid fa-cloud"></i> Dokumentasi Library Class 2025 (Google Drive)
+            <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
+          </a>
+        </nav>
+      </section>
+
+      <!-- ====== Links: Perpustakaan UPNVJT ====== -->
+      <section class="links-group">
+        <h2 class="section-title">
+          <span class="dot dot-gold" aria-hidden="true"></span> Perpustakaan UPNVJT
+        </h2>
+
+        <!-- Subgroup: Website & Resource -->
+        <h3 class="subsection"><i class="fa-solid fa-globe"></i> Website & Resource</h3>
+        <nav class="links">
+          <a class="link-btn btn-gold" href="https://lib.upnjatim.ac.id/" target="_blank" rel="noopener">
+            <i class="fa-solid fa-globe"></i> Website Perpustakaan UPNVJT
+            <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
+          </a>
+          <a class="link-btn btn-gold" href="https://lib.upnjatim.ac.id/tutorial/" target="_blank" rel="noopener">
+            <i class="fa-solid fa-book-open"></i> Tutorial (Springer &amp; Cambridge)
+            <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
+          </a>
+          <a class="link-btn btn-gold" href="https://repository.upnjatim.ac.id/" target="_blank" rel="noopener">
+            <i class="fa-solid fa-folder-open"></i> Repository
+            <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
+          </a>
+        </nav>
+
+        <!-- Subgroup: Narahubung -->
+        <h3 class="subsection"><i class="fa-solid fa-user-headset"></i> Narahubung</h3>
+        <nav class="links">
+          <a class="link-btn btn-gold" href="https://wa.me/6282141025844" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Kak Lisa
+            <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
+          </a>
+          <a class="link-btn btn-gold" href="https://wa.me/6282243333679" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Kak Amalia
+            <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
+          </a>
+        </nav>
+
+        <!-- Subgroup: Media Sosial -->
+        <h3 class="subsection"><i class="fa-brands fa-hashtag"></i> Media Sosial</h3>
+        <nav class="links">
+          <a class="link-btn btn-gold" href="https://instagram.com/pustaka.upnjatim" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i> Instagram Perpustakaan UPNVJT 
+            <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
+          </a>
+        </nav>
+
+        <!-- Subgroup: Email -->
+        <h3 class="subsection"><i class="fa-solid fa-envelope"></i> E-mail</h3>
+        <nav class="links">
+          <a class="link-btn btn-gold" href="mailto:perpustakaan@upnjatim.ac.id">
+            <i class="fa-solid fa-envelope"></i> E-mail Perpustakaan
+          </a>
+        </nav>
+      </section>
+
+      <footer class="site-footer">
+        <p>© 2025 Bibliotopia UPN Veteran Jawa Timur.</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
